@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  2%;
   color: #FEF2BF;
 }
 
@@ -51,3 +51,31 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.start {
+  color: red;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    margin-top: 4rem;
+  }
+
+  #level-title {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+}
+  
